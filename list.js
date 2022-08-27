@@ -25,11 +25,11 @@ fetch("https://rich-lapel-toad.cyclic.app/task/report", {
     });
     }
     else{
-      window.location.href="login.html";
+      window.location.href="index.html";
     }
   })
   .catch((error) => {
-    window.location.href="login.html";
+    window.location.href="index.html";
   });
 fetch("https://rich-lapel-toad.cyclic.app/task/list", {
     headers: { Authorization: "Bearer " + localStorage.user },
@@ -43,11 +43,11 @@ fetch("https://rich-lapel-toad.cyclic.app/task/list", {
       });
     }
     else{
-      window.location.href="login.html";
+      window.location.href="index.html";
     }
   })
   .catch((error) => {
-    window.location.href="login.html";
+    window.location.href="index.html";
     console.log(error);
   });
 
@@ -82,7 +82,7 @@ function onSignoutButton(){
     headers: { Authorization: "Bearer " + localStorage.user },
   }).then((da)=>{
     da.json().then((daj)=>console.log(daj));
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   });
 }
 
