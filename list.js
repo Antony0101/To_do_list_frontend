@@ -157,8 +157,8 @@ function disptask(tasks) {
     var lielement = `<li class="list-group-item "><span class="index">${t.index}.</span>${t.name}
     <span class="priority">(${t.priority})</span>[<span class="status">${stat}</span>]
     <div class="controlbuttons" style="text-align: right;">
-    ${t.status==="pen"?`<i class="fa-solid fa-check completedbtn" onclick="ontickbutton(${t.index})"></i> <i class="fa-solid fa-xmark cancelbtn" onclick="oncrossbutton(${t.index})"></i>`:""}
-    <i class="fa-solid fa-trash-can deletebtn" onclick="ondelbutton(${t.index})" ></i>
+    ${t.status==="pen"?`<i class="fa-solid fa-check completedbtn" style="cursor: pointer" onclick="ontickbutton(${t.index})"></i> <i class="fa-solid fa-xmark cancelbtn" style="cursor: pointer" onclick="oncrossbutton(${t.index})"></i>`:""}
+    <i class="fa-solid fa-trash-can deletebtn" style="cursor: pointer" onclick="ondelbutton(${t.index})" ></i>
     </div>
     </li>`;
     var div = document.createElement("div");
